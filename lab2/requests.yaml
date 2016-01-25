@@ -1,0 +1,17 @@
+---
+requests:
+    - type        : query_coauthor
+      name        : Eike Best
+    - type        : query_coauthor
+      name        : Hendrik Jan Hoogeboom
+    - type        : query_by_name
+      title       : Extended multi bottom-up tree transducers.
+    - type        : query_by_author
+      name        : Eike Best
+    - type        : query_keywords
+      keywords    : 
+                    - Convex
+                    - Complementation
+    - type        : query_coop_by_names
+      name1       : Andreas Maletti
+      name2       : Eric Lilin

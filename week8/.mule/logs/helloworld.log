@@ -1,0 +1,553 @@
+2015-10-18 21:43:00,182 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'helloworld'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2015-10-18 21:43:00,303 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2015-10-18 21:43:00,371 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2015-10-18 21:43:00,462 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2015-10-18 21:43:00,462 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.7)
+2015-10-18 21:43:00,509 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@7216fb24: startup date [Sun Oct 18 21:43:00 PDT 2015]; root of context hierarchy
+2015-10-18 21:43:01,533 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-10-18 21:43:02,278 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2015-10-18 21:43:02,666 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2015-10-18 21:43:02,670 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: helloworldFlow
+2015-10-18 21:43:02,670 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3dfa819
+2015-10-18 21:43:02,692 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: helloworldFlow.stage1
+2015-10-18 21:43:02,698 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: CBR_Flow
+2015-10-18 21:43:02,698 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5f481b73
+2015-10-18 21:43:02,704 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: CBR_Flow.stage1
+2015-10-18 21:43:02,717 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\Code\SOC\week8\.mule\.\.mule\helloworld\queue-tx-log\tx1.log and D:\Code\SOC\week8\.mule\.\.mule\helloworld\queue-tx-log\tx2.log
+2015-10-18 21:43:02,723 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\Code\SOC\week8\.mule\.\.mule\helloworld\queue-xa-tx-log\tx1.log and D:\Code\SOC\week8\.mule\.\.mule\helloworld\queue-xa-tx-log\tx2.log
+2015-10-18 21:43:02,894 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\Code\SOC\week8\.mule\apps\helloworld\helloworld.xml'}]"
+2015-10-18 21:43:02,894 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\Code\SOC\week8\.mule\apps\helloworld\helloworld.xml'}]"
+2015-10-18 21:43:02,895 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'helloworld'                                +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2015-10-18 21:43:02,898 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2015-10-18 21:43:02,898 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2015-10-18 21:43:02,940 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2015-10-18 21:43:02,947 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8082
+2015-10-18 21:43:02,952 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2015-10-18 21:43:02,955 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2015-10-18 21:43:02,957 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: helloworldFlow
+2015-10-18 21:43:02,957 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: helloworldFlow.stage1
+2015-10-18 21:43:02,961 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: CBR_Flow
+2015-10-18 21:43:02,961 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: CBR_Flow.stage1
+2015-10-18 21:43:02,986 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2015-10-18 21:43:07,519 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: helloworld                                            *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2015-10-18 21:43:44,814 [[helloworld].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - No listener found for request: (GET)/favicon.ico
+2015-10-18 21:43:44,814 [[helloworld].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - Available listeners are: [(*)/]
+2015-10-18 21:43:48,259 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - No language specified. Using English as a default.
+2015-10-18 21:43:48,265 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - The reply "Hello!" means "hello" in English.
+2015-10-18 21:43:48,417 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - No listener found for request: (GET)/favicon.ico
+2015-10-18 21:43:48,417 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - Available listeners are: [(*)/]
+2015-10-18 21:43:49,768 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - No language specified. Using Chinese as a default.
+2015-10-18 21:43:49,768 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - The reply "???" means "hello" in null.
+2015-10-18 22:14:13,005 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'helloworld'                                +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2015-10-18 22:14:13,006 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: helloworldFlow
+2015-10-18 22:14:13,007 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: helloworldFlow.stage1
+2015-10-18 22:14:13,108 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: CBR_Flow
+2015-10-18 22:14:13,108 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: CBR_Flow.stage1
+2015-10-18 22:14:13,308 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2015-10-18 22:14:13,311 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:8081
+2015-10-18 22:14:13,312 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:8082
+2015-10-18 22:14:13,313 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2015-10-18 22:14:13,313 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2015-10-18 22:14:13,315 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'helloworld'                               +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2015-10-18 22:14:13,316 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2015-10-18 22:14:13,317 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: helloworldFlow
+2015-10-18 22:14:13,317 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: helloworldFlow.stage1
+2015-10-18 22:14:13,318 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: CBR_Flow
+2015-10-18 22:14:13,318 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: CBR_Flow.stage1
+2015-10-18 22:14:13,319 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2015-10-18 22:14:13,388 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@7216fb24: startup date [Sun Oct 18 21:43:00 PDT 2015]; root of context hierarchy
+2015-10-18 22:14:13,505 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "helloworld" shut down normally on: 10/18/15 10:14 PM  *
+* Up for: 0 days, 0 hours, 31 mins, 10.609 sec                       *
+**********************************************************************
+2015-10-18 22:14:13,650 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'helloworld'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2015-10-18 22:14:13,655 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2015-10-18 22:14:13,658 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2015-10-18 22:14:13,667 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2015-10-18 22:14:13,667 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.7)
+2015-10-18 22:14:13,670 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@491d8e43: startup date [Sun Oct 18 22:14:13 PDT 2015]; root of context hierarchy
+2015-10-18 22:14:13,898 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-10-18 22:14:14,017 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2015-10-18 22:14:14,019 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: helloworldFlow
+2015-10-18 22:14:14,019 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6da6049c
+2015-10-18 22:14:14,023 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: helloworldFlow.stage1
+2015-10-18 22:14:14,024 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: CBR_Flow
+2015-10-18 22:14:14,024 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6d166d76
+2015-10-18 22:14:14,028 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: CBR_Flow.stage1
+2015-10-18 22:14:14,031 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\Code\SOC\week8\.mule\.\.mule\helloworld\queue-tx-log\tx1.log and D:\Code\SOC\week8\.mule\.\.mule\helloworld\queue-tx-log\tx2.log
+2015-10-18 22:14:14,032 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\Code\SOC\week8\.mule\.\.mule\helloworld\queue-xa-tx-log\tx1.log and D:\Code\SOC\week8\.mule\.\.mule\helloworld\queue-xa-tx-log\tx2.log
+2015-10-18 22:14:14,065 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\Code\SOC\week8\.mule\apps\helloworld\helloworld.xml'}]"
+2015-10-18 22:14:14,065 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\Code\SOC\week8\.mule\apps\helloworld\helloworld.xml'}]"
+2015-10-18 22:14:14,065 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'helloworld'                                +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2015-10-18 22:14:14,066 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2015-10-18 22:14:14,066 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2015-10-18 22:14:14,085 [Mule.app.deployer.monitor.1.thread.1] ERROR org.mule.module.launcher.application.DefaultMuleApplication - null
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:1.8.0_60]
+	at sun.nio.ch.Net.bind(Unknown Source) ~[?:1.8.0_60]
+	at sun.nio.ch.Net.bind(Unknown Source) ~[?:1.8.0_60]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source) ~[?:1.8.0_60]
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source) ~[?:1.8.0_60]
+	at org.glassfish.grizzly.nio.transport.TCPNIOBindingHandler.bindToChannelAndAddress(TCPNIOBindingHandler.java:131) ~[grizzly-framework-2.3.21.jar:2.3.21]
+	at org.glassfish.grizzly.nio.transport.TCPNIOBindingHandler.bind(TCPNIOBindingHandler.java:88) ~[grizzly-framework-2.3.21.jar:2.3.21]
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.bind(TCPNIOTransport.java:248) ~[grizzly-framework-2.3.21.jar:2.3.21]
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.bind(TCPNIOTransport.java:228) ~[grizzly-framework-2.3.21.jar:2.3.21]
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.bind(TCPNIOTransport.java:219) ~[grizzly-framework-2.3.21.jar:2.3.21]
+	at org.mule.module.http.internal.listener.grizzly.GrizzlyServer.start(GrizzlyServer.java:41) ~[mule-module-http-3.7.2.jar:3.7.2]
+	at org.mule.module.http.internal.listener.DefaultHttpListenerConfig.start(DefaultHttpListenerConfig.java:271) ~[mule-module-http-3.7.2.jar:3.7.2]
+	at sun.reflect.GeneratedMethodAccessor13.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_60]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_60]
+	at org.mule.lifecycle.phases.DefaultLifecyclePhase.applyLifecycle(DefaultLifecyclePhase.java:237) ~[mule-core-3.7.2.jar:3.7.2]
+	at org.mule.lifecycle.RegistryLifecycleCallback.doApplyLifecycle(RegistryLifecycleCallback.java:91) ~[mule-core-3.7.2.jar:3.7.2]
+	at org.mule.lifecycle.RegistryLifecycleCallback.onTransition(RegistryLifecycleCallback.java:67) ~[mule-core-3.7.2.jar:3.7.2]
+	at org.mule.lifecycle.RegistryLifecycleManager.invokePhase(RegistryLifecycleManager.java:140) ~[mule-core-3.7.2.jar:3.7.2]
+	at org.mule.lifecycle.RegistryLifecycleManager.fireLifecycle(RegistryLifecycleManager.java:111) ~[mule-core-3.7.2.jar:3.7.2]
+	at org.mule.registry.AbstractRegistryBroker.fireLifecycle(AbstractRegistryBroker.java:88) ~[mule-core-3.7.2.jar:3.7.2]
+	at org.mule.registry.MuleRegistryHelper.fireLifecycle(MuleRegistryHelper.java:141) ~[mule-core-3.7.2.jar:3.7.2]
+	at org.mule.lifecycle.MuleContextLifecycleManager$MuleContextLifecycleCallback.onTransition(MuleContextLifecycleManager.java:91) ~[mule-core-3.7.2.jar:3.7.2]
+	at org.mule.lifecycle.MuleContextLifecycleManager$MuleContextLifecycleCallback.onTransition(MuleContextLifecycleManager.java:87) ~[mule-core-3.7.2.jar:3.7.2]
+	at org.mule.lifecycle.MuleContextLifecycleManager.invokePhase(MuleContextLifecycleManager.java:69) ~[mule-core-3.7.2.jar:3.7.2]
+	at org.mule.lifecycle.MuleContextLifecycleManager.fireLifecycle(MuleContextLifecycleManager.java:61) ~[mule-core-3.7.2.jar:3.7.2]
+	at org.mule.DefaultMuleContext.start(DefaultMuleContext.java:294) ~[mule-core-3.7.2.jar:3.7.2]
+	at org.mule.module.launcher.application.DefaultMuleApplication.start(DefaultMuleApplication.java:134) ~[mule-module-launcher-3.7.2.jar:3.7.2]
+	at org.mule.module.launcher.artifact.ArtifactWrapper$4.execute(ArtifactWrapper.java:98) ~[mule-module-launcher-3.7.2.jar:3.7.2]
+	at org.mule.module.launcher.artifact.ArtifactWrapper.executeWithinArtifactClassLoader(ArtifactWrapper.java:129) ~[mule-module-launcher-3.7.2.jar:3.7.2]
+	at org.mule.module.launcher.artifact.ArtifactWrapper.start(ArtifactWrapper.java:93) ~[mule-module-launcher-3.7.2.jar:3.7.2]
+	at org.mule.module.launcher.DefaultArtifactDeployer.deploy(DefaultArtifactDeployer.java:26) ~[mule-module-launcher-3.7.2.jar:3.7.2]
+	at org.mule.module.launcher.DefaultArchiveDeployer.redeploy(DefaultArchiveDeployer.java:523) ~[mule-module-launcher-3.7.2.jar:3.7.2]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.redeployModifiedArtifacts(DeploymentDirectoryWatcher.java:549) ~[mule-module-launcher-3.7.2.jar:3.7.2]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.redeployModifiedApplications(DeploymentDirectoryWatcher.java:538) ~[mule-module-launcher-3.7.2.jar:3.7.2]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.run(DeploymentDirectoryWatcher.java:348) ~[mule-module-launcher-3.7.2.jar:3.7.2]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[?:1.8.0_60]
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source) ~[?:1.8.0_60]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source) ~[?:1.8.0_60]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) ~[?:1.8.0_60]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_60]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_60]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_60]
+2015-10-18 22:14:14,086 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'helloworld'                               +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2015-10-18 22:14:14,086 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2015-10-18 22:14:14,087 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: helloworldFlow
+2015-10-18 22:14:14,087 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: helloworldFlow.stage1
+2015-10-18 22:14:14,087 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: CBR_Flow
+2015-10-18 22:14:14,087 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: CBR_Flow.stage1
+2015-10-18 22:14:14,088 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2015-10-18 22:14:14,113 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@491d8e43: startup date [Sun Oct 18 22:14:13 PDT 2015]; root of context hierarchy
+2015-10-18 22:14:14,257 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "helloworld" shut down normally on: 10/18/15 10:14 PM  *
+* Up for: 0 days, 0 hours, 0 mins, 0.192 sec                         *
+**********************************************************************
+2015-10-18 22:14:24,306 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'helloworld'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2015-10-18 22:14:24,313 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2015-10-18 22:14:24,317 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2015-10-18 22:14:24,326 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2015-10-18 22:14:24,327 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.7)
+2015-10-18 22:14:24,331 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@789c1268: startup date [Sun Oct 18 22:14:24 PDT 2015]; root of context hierarchy
+2015-10-18 22:14:24,512 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-10-18 22:14:24,618 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2015-10-18 22:14:24,619 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: helloworldFlow
+2015-10-18 22:14:24,619 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@24a24842
+2015-10-18 22:14:24,625 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: helloworldFlow.stage1
+2015-10-18 22:14:24,625 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: CBR_Flow
+2015-10-18 22:14:24,625 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@1ef5c82e
+2015-10-18 22:14:24,632 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: CBR_Flow.stage1
+2015-10-18 22:14:24,634 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\Code\SOC\week8\.mule\.\.mule\helloworld\queue-tx-log\tx1.log and D:\Code\SOC\week8\.mule\.\.mule\helloworld\queue-tx-log\tx2.log
+2015-10-18 22:14:24,634 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\Code\SOC\week8\.mule\.\.mule\helloworld\queue-xa-tx-log\tx1.log and D:\Code\SOC\week8\.mule\.\.mule\helloworld\queue-xa-tx-log\tx2.log
+2015-10-18 22:14:24,675 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\Code\SOC\week8\.mule\apps\helloworld\helloworld.xml'}]"
+2015-10-18 22:14:24,675 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\Code\SOC\week8\.mule\apps\helloworld\helloworld.xml'}]"
+2015-10-18 22:14:24,675 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'helloworld'                                +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2015-10-18 22:14:24,677 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2015-10-18 22:14:24,677 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2015-10-18 22:14:24,689 [Mule.app.deployer.monitor.1.thread.1] ERROR org.mule.module.launcher.application.DefaultMuleApplication - null
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:1.8.0_60]
+	at sun.nio.ch.Net.bind(Unknown Source) ~[?:1.8.0_60]
+	at sun.nio.ch.Net.bind(Unknown Source) ~[?:1.8.0_60]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source) ~[?:1.8.0_60]
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source) ~[?:1.8.0_60]
+	at org.glassfish.grizzly.nio.transport.TCPNIOBindingHandler.bindToChannelAndAddress(TCPNIOBindingHandler.java:131) ~[grizzly-framework-2.3.21.jar:2.3.21]
+	at org.glassfish.grizzly.nio.transport.TCPNIOBindingHandler.bind(TCPNIOBindingHandler.java:88) ~[grizzly-framework-2.3.21.jar:2.3.21]
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.bind(TCPNIOTransport.java:248) ~[grizzly-framework-2.3.21.jar:2.3.21]
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.bind(TCPNIOTransport.java:228) ~[grizzly-framework-2.3.21.jar:2.3.21]
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.bind(TCPNIOTransport.java:219) ~[grizzly-framework-2.3.21.jar:2.3.21]
+	at org.mule.module.http.internal.listener.grizzly.GrizzlyServer.start(GrizzlyServer.java:41) ~[mule-module-http-3.7.2.jar:3.7.2]
+	at org.mule.module.http.internal.listener.DefaultHttpListenerConfig.start(DefaultHttpListenerConfig.java:271) ~[mule-module-http-3.7.2.jar:3.7.2]
+	at sun.reflect.GeneratedMethodAccessor13.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_60]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_60]
+	at org.mule.lifecycle.phases.DefaultLifecyclePhase.applyLifecycle(DefaultLifecyclePhase.java:237) ~[mule-core-3.7.2.jar:3.7.2]
+	at org.mule.lifecycle.RegistryLifecycleCallback.doApplyLifecycle(RegistryLifecycleCallback.java:91) ~[mule-core-3.7.2.jar:3.7.2]
+	at org.mule.lifecycle.RegistryLifecycleCallback.onTransition(RegistryLifecycleCallback.java:67) ~[mule-core-3.7.2.jar:3.7.2]
+	at org.mule.lifecycle.RegistryLifecycleManager.invokePhase(RegistryLifecycleManager.java:140) ~[mule-core-3.7.2.jar:3.7.2]
+	at org.mule.lifecycle.RegistryLifecycleManager.fireLifecycle(RegistryLifecycleManager.java:111) ~[mule-core-3.7.2.jar:3.7.2]
+	at org.mule.registry.AbstractRegistryBroker.fireLifecycle(AbstractRegistryBroker.java:88) ~[mule-core-3.7.2.jar:3.7.2]
+	at org.mule.registry.MuleRegistryHelper.fireLifecycle(MuleRegistryHelper.java:141) ~[mule-core-3.7.2.jar:3.7.2]
+	at org.mule.lifecycle.MuleContextLifecycleManager$MuleContextLifecycleCallback.onTransition(MuleContextLifecycleManager.java:91) ~[mule-core-3.7.2.jar:3.7.2]
+	at org.mule.lifecycle.MuleContextLifecycleManager$MuleContextLifecycleCallback.onTransition(MuleContextLifecycleManager.java:87) ~[mule-core-3.7.2.jar:3.7.2]
+	at org.mule.lifecycle.MuleContextLifecycleManager.invokePhase(MuleContextLifecycleManager.java:69) ~[mule-core-3.7.2.jar:3.7.2]
+	at org.mule.lifecycle.MuleContextLifecycleManager.fireLifecycle(MuleContextLifecycleManager.java:61) ~[mule-core-3.7.2.jar:3.7.2]
+	at org.mule.DefaultMuleContext.start(DefaultMuleContext.java:294) ~[mule-core-3.7.2.jar:3.7.2]
+	at org.mule.module.launcher.application.DefaultMuleApplication.start(DefaultMuleApplication.java:134) ~[mule-module-launcher-3.7.2.jar:3.7.2]
+	at org.mule.module.launcher.artifact.ArtifactWrapper$4.execute(ArtifactWrapper.java:98) ~[mule-module-launcher-3.7.2.jar:3.7.2]
+	at org.mule.module.launcher.artifact.ArtifactWrapper.executeWithinArtifactClassLoader(ArtifactWrapper.java:129) ~[mule-module-launcher-3.7.2.jar:3.7.2]
+	at org.mule.module.launcher.artifact.ArtifactWrapper.start(ArtifactWrapper.java:93) ~[mule-module-launcher-3.7.2.jar:3.7.2]
+	at org.mule.module.launcher.DefaultArtifactDeployer.deploy(DefaultArtifactDeployer.java:26) ~[mule-module-launcher-3.7.2.jar:3.7.2]
+	at org.mule.module.launcher.DefaultArchiveDeployer.redeploy(DefaultArchiveDeployer.java:523) ~[mule-module-launcher-3.7.2.jar:3.7.2]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.redeployModifiedArtifacts(DeploymentDirectoryWatcher.java:549) ~[mule-module-launcher-3.7.2.jar:3.7.2]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.redeployModifiedApplications(DeploymentDirectoryWatcher.java:538) ~[mule-module-launcher-3.7.2.jar:3.7.2]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.run(DeploymentDirectoryWatcher.java:348) ~[mule-module-launcher-3.7.2.jar:3.7.2]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[?:1.8.0_60]
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source) ~[?:1.8.0_60]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source) ~[?:1.8.0_60]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) ~[?:1.8.0_60]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_60]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_60]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_60]
+2015-10-18 22:14:24,689 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'helloworld'                               +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2015-10-18 22:14:24,689 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2015-10-18 22:14:24,690 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: helloworldFlow
+2015-10-18 22:14:24,690 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: helloworldFlow.stage1
+2015-10-18 22:14:24,690 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: CBR_Flow
+2015-10-18 22:14:24,691 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: CBR_Flow.stage1
+2015-10-18 22:14:24,692 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2015-10-18 22:14:24,774 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@789c1268: startup date [Sun Oct 18 22:14:24 PDT 2015]; root of context hierarchy
+2015-10-18 22:14:24,971 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "helloworld" shut down normally on: 10/18/15 10:14 PM  *
+* Up for: 0 days, 0 hours, 0 mins, 0.296 sec                         *
+**********************************************************************
+2015-10-18 22:23:38,583 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'helloworld'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2015-10-18 22:23:38,720 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2015-10-18 22:23:38,794 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2015-10-18 22:23:38,911 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2015-10-18 22:23:38,911 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.7)
+2015-10-18 22:23:38,950 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@7216fb24: startup date [Sun Oct 18 22:23:38 PDT 2015]; root of context hierarchy
+2015-10-18 22:23:40,304 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-10-18 22:23:41,158 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2015-10-18 22:23:41,498 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2015-10-18 22:23:41,502 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: helloworldFlow
+2015-10-18 22:23:41,502 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3dfa819
+2015-10-18 22:23:41,531 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: helloworldFlow.stage1
+2015-10-18 22:23:41,538 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: CBR_Flow
+2015-10-18 22:23:41,539 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5f481b73
+2015-10-18 22:23:41,547 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: CBR_Flow.stage1
+2015-10-18 22:23:41,566 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\Code\SOC\week8\.mule\.\.mule\helloworld\queue-tx-log\tx1.log and D:\Code\SOC\week8\.mule\.\.mule\helloworld\queue-tx-log\tx2.log
+2015-10-18 22:23:41,575 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\Code\SOC\week8\.mule\.\.mule\helloworld\queue-xa-tx-log\tx1.log and D:\Code\SOC\week8\.mule\.\.mule\helloworld\queue-xa-tx-log\tx2.log
+2015-10-18 22:23:41,881 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\Code\SOC\week8\.mule\apps\helloworld\helloworld.xml'}]"
+2015-10-18 22:23:41,882 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\Code\SOC\week8\.mule\apps\helloworld\helloworld.xml'}]"
+2015-10-18 22:23:41,883 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'helloworld'                                +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2015-10-18 22:23:41,885 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2015-10-18 22:23:41,886 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2015-10-18 22:23:41,951 [main] ERROR org.mule.module.launcher.application.DefaultMuleApplication - null
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:1.8.0_60]
+	at sun.nio.ch.Net.bind(Unknown Source) ~[?:1.8.0_60]
+	at sun.nio.ch.Net.bind(Unknown Source) ~[?:1.8.0_60]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source) ~[?:1.8.0_60]
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source) ~[?:1.8.0_60]
+	at org.glassfish.grizzly.nio.transport.TCPNIOBindingHandler.bindToChannelAndAddress(TCPNIOBindingHandler.java:131) ~[grizzly-framework-2.3.21.jar:2.3.21]
+	at org.glassfish.grizzly.nio.transport.TCPNIOBindingHandler.bind(TCPNIOBindingHandler.java:88) ~[grizzly-framework-2.3.21.jar:2.3.21]
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.bind(TCPNIOTransport.java:248) ~[grizzly-framework-2.3.21.jar:2.3.21]
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.bind(TCPNIOTransport.java:228) ~[grizzly-framework-2.3.21.jar:2.3.21]
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.bind(TCPNIOTransport.java:219) ~[grizzly-framework-2.3.21.jar:2.3.21]
+	at org.mule.module.http.internal.listener.grizzly.GrizzlyServer.start(GrizzlyServer.java:41) ~[mule-module-http-3.7.2.jar:3.7.2]
+	at org.mule.module.http.internal.listener.DefaultHttpListenerConfig.start(DefaultHttpListenerConfig.java:271) ~[mule-module-http-3.7.2.jar:3.7.2]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_60]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_60]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_60]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_60]
+	at org.mule.lifecycle.phases.DefaultLifecyclePhase.applyLifecycle(DefaultLifecyclePhase.java:237) ~[mule-core-3.7.2.jar:3.7.2]
+	at org.mule.lifecycle.RegistryLifecycleCallback.doApplyLifecycle(RegistryLifecycleCallback.java:91) ~[mule-core-3.7.2.jar:3.7.2]
+	at org.mule.lifecycle.RegistryLifecycleCallback.onTransition(RegistryLifecycleCallback.java:67) ~[mule-core-3.7.2.jar:3.7.2]
+	at org.mule.lifecycle.RegistryLifecycleManager.invokePhase(RegistryLifecycleManager.java:140) ~[mule-core-3.7.2.jar:3.7.2]
+	at org.mule.lifecycle.RegistryLifecycleManager.fireLifecycle(RegistryLifecycleManager.java:111) ~[mule-core-3.7.2.jar:3.7.2]
+	at org.mule.registry.AbstractRegistryBroker.fireLifecycle(AbstractRegistryBroker.java:88) ~[mule-core-3.7.2.jar:3.7.2]
+	at org.mule.registry.MuleRegistryHelper.fireLifecycle(MuleRegistryHelper.java:141) ~[mule-core-3.7.2.jar:3.7.2]
+	at org.mule.lifecycle.MuleContextLifecycleManager$MuleContextLifecycleCallback.onTransition(MuleContextLifecycleManager.java:91) ~[mule-core-3.7.2.jar:3.7.2]
+	at org.mule.lifecycle.MuleContextLifecycleManager$MuleContextLifecycleCallback.onTransition(MuleContextLifecycleManager.java:87) ~[mule-core-3.7.2.jar:3.7.2]
+	at org.mule.lifecycle.MuleContextLifecycleManager.invokePhase(MuleContextLifecycleManager.java:69) ~[mule-core-3.7.2.jar:3.7.2]
+	at org.mule.lifecycle.MuleContextLifecycleManager.fireLifecycle(MuleContextLifecycleManager.java:61) ~[mule-core-3.7.2.jar:3.7.2]
+	at org.mule.DefaultMuleContext.start(DefaultMuleContext.java:294) ~[mule-core-3.7.2.jar:3.7.2]
+	at org.mule.module.launcher.application.DefaultMuleApplication.start(DefaultMuleApplication.java:134) ~[mule-module-launcher-3.7.2.jar:3.7.2]
+	at org.mule.module.launcher.artifact.ArtifactWrapper$4.execute(ArtifactWrapper.java:98) ~[mule-module-launcher-3.7.2.jar:3.7.2]
+	at org.mule.module.launcher.artifact.ArtifactWrapper.executeWithinArtifactClassLoader(ArtifactWrapper.java:129) ~[mule-module-launcher-3.7.2.jar:3.7.2]
+	at org.mule.module.launcher.artifact.ArtifactWrapper.start(ArtifactWrapper.java:93) ~[mule-module-launcher-3.7.2.jar:3.7.2]
+	at org.mule.module.launcher.DefaultArtifactDeployer.deploy(DefaultArtifactDeployer.java:26) ~[mule-module-launcher-3.7.2.jar:3.7.2]
+	at org.mule.module.launcher.DefaultArchiveDeployer.guardedDeploy(DefaultArchiveDeployer.java:310) ~[mule-module-launcher-3.7.2.jar:3.7.2]
+	at org.mule.module.launcher.DefaultArchiveDeployer.deployArtifact(DefaultArchiveDeployer.java:330) ~[mule-module-launcher-3.7.2.jar:3.7.2]
+	at org.mule.module.launcher.DefaultArchiveDeployer.deployPackagedArtifact(DefaultArchiveDeployer.java:155) ~[mule-module-launcher-3.7.2.jar:3.7.2]
+	at org.mule.module.launcher.DefaultArchiveDeployer.deployPackagedArtifact(DefaultArchiveDeployer.java:256) ~[mule-module-launcher-3.7.2.jar:3.7.2]
+	at org.mule.module.launcher.DefaultArchiveDeployer.deployPackagedArtifact(DefaultArchiveDeployer.java:78) ~[mule-module-launcher-3.7.2.jar:3.7.2]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.deployPackedApps(DeploymentDirectoryWatcher.java:275) ~[mule-module-launcher-3.7.2.jar:3.7.2]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.start(DeploymentDirectoryWatcher.java:150) ~[mule-module-launcher-3.7.2.jar:3.7.2]
+	at org.mule.module.launcher.MuleDeploymentService.start(MuleDeploymentService.java:100) ~[mule-module-launcher-3.7.2.jar:3.7.2]
+	at org.mule.module.launcher.MuleContainer.start(MuleContainer.java:170) ~[mule-module-launcher-3.7.2.jar:3.7.2]
+	at org.mule.tooling.server.application.ApplicationDeployer.main(ApplicationDeployer.java:15) ~[tooling-support-3.7.2.jar:?]
+2015-10-18 22:23:41,952 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'helloworld'                               +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2015-10-18 22:23:41,953 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2015-10-18 22:23:41,964 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: helloworldFlow
+2015-10-18 22:23:41,965 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: helloworldFlow.stage1
+2015-10-18 22:23:41,966 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: CBR_Flow
+2015-10-18 22:23:41,966 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: CBR_Flow.stage1
+2015-10-18 22:23:41,968 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2015-10-18 22:23:42,208 [main] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@7216fb24: startup date [Sun Oct 18 22:23:38 PDT 2015]; root of context hierarchy
+2015-10-18 22:23:42,390 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "helloworld" shut down normally on: 10/18/15 10:23 PM  *
+* Up for: 0 days, 0 hours, 0 mins, 0.504 sec                         *
+**********************************************************************
+2015-10-18 22:24:28,539 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'helloworld'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2015-10-18 22:24:28,659 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2015-10-18 22:24:28,739 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2015-10-18 22:24:28,832 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2015-10-18 22:24:28,832 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.7)
+2015-10-18 22:24:28,874 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@7216fb24: startup date [Sun Oct 18 22:24:28 PDT 2015]; root of context hierarchy
+2015-10-18 22:24:29,863 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-10-18 22:24:30,725 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2015-10-18 22:24:31,044 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2015-10-18 22:24:31,049 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: helloworldFlow
+2015-10-18 22:24:31,049 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7efb53af
+2015-10-18 22:24:31,073 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: helloworldFlow.stage1
+2015-10-18 22:24:31,079 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: CBR_Flow
+2015-10-18 22:24:31,079 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2f5b8250
+2015-10-18 22:24:31,084 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: CBR_Flow.stage1
+2015-10-18 22:24:31,095 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\Code\SOC\week8\.mule\.\.mule\helloworld\queue-tx-log\tx1.log and D:\Code\SOC\week8\.mule\.\.mule\helloworld\queue-tx-log\tx2.log
+2015-10-18 22:24:31,101 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\Code\SOC\week8\.mule\.\.mule\helloworld\queue-xa-tx-log\tx1.log and D:\Code\SOC\week8\.mule\.\.mule\helloworld\queue-xa-tx-log\tx2.log
+2015-10-18 22:24:31,308 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\Code\SOC\week8\.mule\apps\helloworld\helloworld.xml'}]"
+2015-10-18 22:24:31,308 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\Code\SOC\week8\.mule\apps\helloworld\helloworld.xml'}]"
+2015-10-18 22:24:31,309 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'helloworld'                                +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2015-10-18 22:24:31,312 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2015-10-18 22:24:31,312 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2015-10-18 22:24:31,351 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:10086
+2015-10-18 22:24:31,356 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:10087
+2015-10-18 22:24:31,359 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2015-10-18 22:24:31,363 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2015-10-18 22:24:31,366 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: helloworldFlow
+2015-10-18 22:24:31,366 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: helloworldFlow.stage1
+2015-10-18 22:24:31,372 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: CBR_Flow
+2015-10-18 22:24:31,372 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: CBR_Flow.stage1
+2015-10-18 22:24:31,399 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2015-10-18 22:24:35,927 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: helloworld                                            *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2015-10-18 22:24:37,685 [[helloworld].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - No listener found for request: (GET)/favicon.ico
+2015-10-18 22:24:37,685 [[helloworld].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - Available listeners are: [(*)/]
+2015-10-18 22:24:41,242 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - No language specified. Using English as a default.
+2015-10-18 22:24:41,247 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - The reply "Hello!" means "hello" in English.
+2015-10-18 22:24:41,376 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - No listener found for request: (GET)/favicon.ico
+2015-10-18 22:24:41,376 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - Available listeners are: [(*)/]
+2015-10-18 22:24:42,818 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - No language specified. Using Chinese as a default.
+2015-10-18 22:24:42,819 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - The reply "???" means "hello" in null.
+2015-10-18 22:24:43,464 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - No language specified. Using English as a default.
+2015-10-18 22:24:43,464 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - The reply "Hello!" means "hello" in English.
+2015-10-18 22:24:43,905 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - No language specified. Using Chinese as a default.
+2015-10-18 22:24:43,906 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - The reply "???" means "hello" in null.
+2015-10-18 22:24:44,328 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - No language specified. Using English as a default.
+2015-10-18 22:24:44,329 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - The reply "Hello!" means "hello" in English.
+2015-10-18 22:24:44,560 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - No language specified. Using Chinese as a default.
+2015-10-18 22:24:44,561 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - The reply "???" means "hello" in null.
+2015-10-18 22:24:44,760 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - No language specified. Using English as a default.
+2015-10-18 22:24:44,761 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - The reply "Hello!" means "hello" in English.
+2015-10-18 22:24:44,976 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - No language specified. Using Chinese as a default.
+2015-10-18 22:24:44,977 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - The reply "???" means "hello" in null.
+2015-10-18 22:24:45,248 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - No language specified. Using English as a default.
+2015-10-18 22:24:45,249 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - The reply "Hello!" means "hello" in English.
+2015-10-18 22:24:45,521 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - No language specified. Using Chinese as a default.
+2015-10-18 22:24:45,522 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - The reply "???" means "hello" in null.
+2015-10-18 22:24:45,768 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - No language specified. Using English as a default.
+2015-10-18 22:24:45,769 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - The reply "Hello!" means "hello" in English.
+2015-10-18 22:24:46,056 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - No language specified. Using Chinese as a default.
+2015-10-18 22:24:46,056 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - The reply "???" means "hello" in null.
+2015-10-18 22:24:46,328 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - No language specified. Using English as a default.
+2015-10-18 22:24:46,329 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - The reply "Hello!" means "hello" in English.
+2015-10-18 22:24:46,593 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - No language specified. Using Chinese as a default.
+2015-10-18 22:24:46,595 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - The reply "???" means "hello" in null.
+2015-10-18 22:24:46,889 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - No language specified. Using English as a default.
+2015-10-18 22:24:46,890 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - The reply "Hello!" means "hello" in English.
+2015-10-18 22:24:47,168 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - No language specified. Using Chinese as a default.
+2015-10-18 22:24:47,168 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - The reply "???" means "hello" in null.
+2015-10-18 22:24:47,432 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - No language specified. Using English as a default.
+2015-10-18 22:24:47,433 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - The reply "Hello!" means "hello" in English.
+2015-10-18 22:24:47,695 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - No language specified. Using Chinese as a default.
+2015-10-18 22:24:47,697 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - The reply "???" means "hello" in null.
+2015-10-18 22:24:47,968 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - No language specified. Using English as a default.
+2015-10-18 22:24:47,969 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - The reply "Hello!" means "hello" in English.
+2015-10-18 22:24:48,225 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - No language specified. Using Chinese as a default.
+2015-10-18 22:24:48,226 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - The reply "???" means "hello" in null.
+2015-10-18 22:25:57,844 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - The reply "Hola!" means "hello" in Spanish.
+2015-10-18 22:26:03,503 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - The reply "Bonjour!" means "hello" in French.
+2015-10-18 22:28:21,039 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'helloworld'                                +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2015-10-18 22:28:21,041 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: helloworldFlow
+2015-10-18 22:28:21,041 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: helloworldFlow.stage1
+2015-10-18 22:28:21,142 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: CBR_Flow
+2015-10-18 22:28:21,144 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: CBR_Flow.stage1
+2015-10-18 22:28:21,159 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2015-10-18 22:28:21,165 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:10086
+2015-10-18 22:28:21,166 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:10087
+2015-10-18 22:28:21,170 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2015-10-18 22:28:21,171 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2015-10-18 22:28:21,175 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'helloworld'                               +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2015-10-18 22:28:21,176 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2015-10-18 22:28:21,178 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: helloworldFlow
+2015-10-18 22:28:21,178 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: helloworldFlow.stage1
+2015-10-18 22:28:21,179 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: CBR_Flow
+2015-10-18 22:28:21,179 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: CBR_Flow.stage1
+2015-10-18 22:28:21,181 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2015-10-18 22:28:21,314 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@7216fb24: startup date [Sun Oct 18 22:24:28 PDT 2015]; root of context hierarchy
+2015-10-18 22:28:21,431 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "helloworld" shut down normally on: 10/18/15 10:28 PM  *
+* Up for: 0 days, 0 hours, 3 mins, 50.121 sec                        *
+**********************************************************************
+2015-10-18 22:28:21,611 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'helloworld'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2015-10-18 22:28:21,616 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2015-10-18 22:28:21,619 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2015-10-18 22:28:21,628 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2015-10-18 22:28:21,628 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.7)
+2015-10-18 22:28:21,630 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@3c173cf7: startup date [Sun Oct 18 22:28:21 PDT 2015]; root of context hierarchy
+2015-10-18 22:28:21,865 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-10-19 20:30:21,917 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'helloworld'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2015-10-19 20:30:22,233 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2015-10-19 20:30:22,360 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2015-10-19 20:30:22,506 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2015-10-19 20:30:22,507 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.7)
+2015-10-19 20:30:22,594 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@7216fb24: startup date [Mon Oct 19 20:30:22 PDT 2015]; root of context hierarchy
+2015-10-19 20:30:23,918 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-10-19 20:30:25,500 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2015-10-19 20:30:26,256 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2015-10-19 20:30:26,259 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: helloworldFlow
+2015-10-19 20:30:26,260 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3dfa819
+2015-10-19 20:30:26,289 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: helloworldFlow.stage1
+2015-10-19 20:30:26,302 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: CBR_Flow
+2015-10-19 20:30:26,302 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5f481b73
+2015-10-19 20:30:26,306 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: CBR_Flow.stage1
+2015-10-19 20:30:26,345 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\Code\SOC\week8\.mule\.\.mule\helloworld\queue-tx-log\tx1.log and D:\Code\SOC\week8\.mule\.\.mule\helloworld\queue-tx-log\tx2.log
+2015-10-19 20:30:26,433 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\Code\SOC\week8\.mule\.\.mule\helloworld\queue-xa-tx-log\tx1.log and D:\Code\SOC\week8\.mule\.\.mule\helloworld\queue-xa-tx-log\tx2.log
+2015-10-19 20:30:26,898 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\Code\SOC\week8\.mule\apps\helloworld\helloworld.xml'}]"
+2015-10-19 20:30:26,898 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\Code\SOC\week8\.mule\apps\helloworld\helloworld.xml'}]"
+2015-10-19 20:30:26,899 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'helloworld'                                +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2015-10-19 20:30:26,901 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2015-10-19 20:30:26,902 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2015-10-19 20:30:26,990 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:10086
+2015-10-19 20:30:26,996 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:10087
+2015-10-19 20:30:27,000 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2015-10-19 20:30:27,005 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2015-10-19 20:30:27,007 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: helloworldFlow
+2015-10-19 20:30:27,007 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: helloworldFlow.stage1
+2015-10-19 20:30:27,047 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: CBR_Flow
+2015-10-19 20:30:27,047 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: CBR_Flow.stage1
+2015-10-19 20:30:27,133 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2015-10-19 20:30:27,157 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: helloworld                                            *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2015-10-19 20:30:32,243 [[helloworld].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - No listener found for request: (GET)/favicon.ico
+2015-10-19 20:30:32,243 [[helloworld].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - Available listeners are: [(*)/]
+2015-10-19 20:31:28,347 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - No language specified. Using English as a default.
+2015-10-19 20:31:28,351 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - The reply "Hello!" means "hello" in English.
+2015-10-19 20:31:28,498 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - No listener found for request: (GET)/favicon.ico
+2015-10-19 20:31:28,498 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - Available listeners are: [(*)/]
+2015-10-19 20:31:38,249 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - No language specified. Using Chinese as a default.
+2015-10-19 20:31:38,250 [[helloworld].HTTP_Listener_Configuration_CBR.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - The reply "???" means "hello" in null.
+2015-10-19 20:32:03,338 [[helloworld].HTTP_Listener_Configuration_CBR.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - The reply "Bonjour!" means "hello" in French.
+2015-10-19 20:32:10,560 [[helloworld].HTTP_Listener_Configuration_CBR.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - The reply "Hola!" means "hello" in Spanish.

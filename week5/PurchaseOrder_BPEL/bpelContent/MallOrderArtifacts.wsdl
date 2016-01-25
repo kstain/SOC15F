@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<definitions name="MallOrder"
+        targetNamespace="http://servicescomputing.org/xsd/po" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:p="http://www.w3.org/2001/XMLSchema" xmlns:pos="http://servicescomputing.org/xsd/po" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     TYPE DEFINITION - List of types participating in this BPEL process 
+     The BPEL Designer will generate default request and response types
+     but you can define or import any XML Schema type and use them as part 
+     of the message types.
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->    
+    <types>
+        <schema attributeFormDefault="unqualified" elementFormDefault="qualified" 
+                targetNamespace="http://mallorder.localhost" 
+                xmlns="http://www.w3.org/2001/XMLSchema">
+
+            <element name="MallOrderRequest">
+                <complexType>
+                    <sequence>
+                        <element name="input" type="string"/>
+                    </sequence>
+                </complexType>
+            </element>
+
+            <element name="MallOrderResponse">
+                <complexType>
+                    <sequence>
+                        <element name="result" type="string"/>
+                    </sequence>
+                </complexType>
+            </element>
+        </schema>
+    </types>
+
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     MESSAGE TYPE DEFINITION - Definition of the message types used as 
+     part of the port type defintions
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->    
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     PORT TYPE DEFINITION - A port type groups a set of operations into
+     a logical service unit.
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->    
+
+    <!-- portType implemented by the MallOrder BPEL process -->
+    <message name="paymentResponseMessage">
+    	<part name="paymentReceipt" type="p:string"></part>
+    </message>
+    <message name="shippingRequestMessage">
+    	<part name="purchaseOrder" type="p:string"></part>
+    </message>
+    <message name="shippingResponseMessage">
+    	<part name="shippingSchedule" type="p:string"></part>
+    </message>
+    <message name="paymentRequestMessage">
+    	<part name="purchaseOrder" type="p:string"></part>
+    </message>
+    <message name="PurchaseOrderMessage">
+    	<part name="purchaseOrder" type="p:string"></part>
+    </message>
+    <message name="ResultMessage">
+    	<part name="result" type="p:string"></part>
+    </message>
+    <portType name="paymentPT">
+        <operation name="submitPayment">
+            <input  message="pos:paymentRequestMessage" />
+            <output message="pos:paymentResponseMessage"/>
+        </operation>
+    </portType>
+  
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     PARTNER LINK TYPE DEFINITION
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->    
+     <plnk:partnerLinkType name="supplyLT">
+        <plnk:role name="purchaseOrderService" portType="pos:purchaseOrderPT" /></plnk:partnerLinkType>
+        
+    <plnk:partnerLinkType name="shippingLT">
+        <plnk:role name="shippingServiceRequestor" portType="pos:shippingPT" /></plnk:partnerLinkType>
+        
+    <plnk:partnerLinkType name="paymentLT">
+        <plnk:role name="paymentServiceRequestor" portType="pos:paymentPT" /></plnk:partnerLinkType>   
+    
+    <portType name="shippingPT">
+    	<operation name="requestShipping">
+    		<input message="pos:shippingRequestMessage"></input>
+    		<output message="pos:shippingResponseMessage"></output>
+    	</operation>
+    </portType>
+    <portType name="purchaseOrderPT">
+    	<operation name="submitPurchaseOrder">
+    		<input message="pos:PurchaseOrderMessage"></input>
+    		<output message="pos:ResultMessage"></output>
+    	</operation>
+    </portType>
+    <binding name="PaymentBinding" type="pos:paymentPT">
+    	<soap:binding style="document"
+    		transport="http://schemas.xmlsoap.org/soap/http" />
+    	<operation name="submitPayment">
+    		<soap:operation
+    			soapAction="http://servicescomputing.org/xsd/po/submitPayment" />
+    		<input>
+    			<soap:body use="literal" />
+    		</input>
+    		<output>
+    			<soap:body use="literal" />
+    		</output>
+    	</operation>
+    </binding>
+    <binding name="PurchaseOrderBinding" type="pos:purchaseOrderPT">
+    	<soap:binding style="document"
+    		transport="http://schemas.xmlsoap.org/soap/http" />
+    	<operation name="submitPurchaseOrder">
+    		<soap:operation
+    			soapAction="http://servicescomputing.org/xsd/po/submitPurchaseOrder" />
+    		<input>
+    			<soap:body use="literal" />
+    		</input>
+    		<output>
+    			<soap:body use="literal" />
+    		</output>
+    	</operation>
+    </binding>
+    <binding name="ShippingBinding" type="pos:shippingPT">
+    	<soap:binding style="document"
+    		transport="http://schemas.xmlsoap.org/soap/http" />
+    	<operation name="requestShipping">
+    		<soap:operation
+    			soapAction="http://servicescomputing.org/xsd/po/requestShipping" />
+    		<input>
+    			<soap:body use="literal" />
+    		</input>
+    		<output>
+    			<soap:body use="literal" />
+    		</output>
+    	</operation>
+    </binding>
+    <service name="PaymentService">
+    	<port name="PaymentPort" binding="pos:PaymentBinding">
+    		<soap:address location="http://localhost:8081/PurchaseOrderDummy/services/PaymentDummy" />
+    	</port>
+    </service>
+    <service name="PurchaseOrderService">
+    	<port name="PurchaseOrderPort" binding="pos:PurchaseOrderBinding">
+    		<soap:address location="http://localhost:8081/PurchaseOrderDummy/services/PurchaseDummy" />
+    	</port>
+    </service>
+    <service name="ShippingService">
+    	<port name="ShippingPort" binding="pos:ShippingBinding">
+    		<soap:address location="http://localhost:8081/PurchaseOrderDummy/services/ShippingDummy" />
+    	</port>
+    </service>
+</definitions>

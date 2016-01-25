@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd">
+    <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="10086" doc:name="HTTP Listener Configuration"/>
+    <http:listener-config name="HTTP_Listener_Configuration_CBR" host="0.0.0.0" port="10087" doc:name="HTTP Listener Configuration"/>
+    <flow name="helloworldFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/" doc:name="HTTP"/>
+        <set-payload doc:name="Set Payload" value="Hello World!"/>
+    </flow>
+    <flow name="CBR_Flow">
+        <http:listener config-ref="HTTP_Listener_Configuration_CBR" path="/" doc:name="HTTP"/>
+        <expression-filter expression="#[message.inboundProperties.'http.request.uri' != '/favicon.ico']" doc:name="Expression"/>
+        <set-variable variableName="language" value="#[message.inboundProperties.'http.query.params'.language]" doc:name="Set Language Variable"/>
+        <choice doc:name="Choice">
+            <when expression="#[flowVars.language == 'Spanish']">
+                <set-payload value="Hola!" doc:name="Reply in Spanish"/>
+            </when>
+            <when expression="#[flowVars.language == 'French']">
+                <set-payload value="Bonjour!" doc:name="Reply in French"/>
+            </when>
+            <otherwise>
+                <flow-ref name="CBR_TutorialFlow2" doc:name="Flow Reference"/>
+            </otherwise>
+        </choice>
+        <logger message="The reply &quot;#[payload]&quot; means &quot;hello&quot; in #[flowVars.language]." level="INFO" doc:name="Logger"/>
+    </flow>
+    <sub-flow name="CBR_TutorialFlow2">
+        <round-robin doc:name="Round Robin">
+            <processor-chain>
+                <logger message="No language specified. Using English as a default." level="INFO" doc:name="Logger"/>
+                <set-variable variableName="language" value="English" doc:name="Set Language to English"/>
+                <set-payload value="Hello!" doc:name="Reply in English"/>
+            </processor-chain>
+            <processor-chain>
+                <logger message="No language specified. Using Chinese as a default." level="INFO" doc:name="Logger"/>
+                <set-variable variableName="Chinese" value="" doc:name="Set Language to Chinese"/>
+                <set-payload value="&#20320;&#22909;&#65281;" doc:name="Set Payload"/>
+            </processor-chain>
+        </round-robin>
+    </sub-flow>
+</mule>

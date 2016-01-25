@@ -1,0 +1,60 @@
+
+=======query_coauthor on Eike Best , result is========
+
+(stringArray){
+   string[] = 
+      "Klaus Voss",
+      "Astrid Kiehn",
+      "Wojciech Fraczak",
+      "Elisabeth Pelz",
+      "Hanna Klaudel",
+      "Raymond R. Devillers",
+      "Richard P. Hopkins",
+      "Philippe Darondeau",
+      "Lucia Pomello",
+ }
+
+=======query_coauthor on Hendrik Jan Hoogeboom , result is========
+
+(stringArray){
+   string[] = 
+      "Andrzej Ehrenfeucht",
+      "Nike van Vugt",
+      "Robert Brijder",
+      "Grzegorz Rozenberg",
+ }
+
+=======query_by_name on Extended multi bottom-up tree transducers. , result is========
+
+(stringArray){
+   string[] = 
+      "{'Pub_pages': u'561-590', 'Pub_key': u'journals/acta/EngelfrietLM09', 'Pub_url': u'db/journals/acta/acta46.html#EngelfrietLM09', 'Pub_type': u'article', 'Pub_year': u'2009', 'Pub_volume': u'46', 'Pub_number': u'8', 'Pub_author': [{'Name': u'Joost Engelfriet'}, {'Name': u'Eric Lilin'}, {'Name': u'Andreas Maletti'}], 'Pub_ee': u'http://dx.doi.org/10.1007/s00236-009-0105-8', 'ID': 98L, 'Pub_title': u'Extended multi bottom-up tree transducers.', 'Pub_mdate': u'2010-01-04', 'Pub_journal': u'Acta Inf.'}",
+ }
+
+=======query_by_author on Eike Best , result is========
+
+(stringArray){
+   string[] = 
+      "{'Pub_pages': u'231-264', 'Pub_key': u'journals/acta/BestDKP91', 'Pub_url': u'db/journals/acta/acta28.html#BestDKP91', 'Pub_type': u'article', 'Pub_authors': ['Eike Best', u'Raymond R. Devillers', u'Astrid Kiehn', u'Lucia Pomello'], 'Pub_year': u'1991', 'Pub_volume': u'28', 'Pub_number': u'3', 'Pub_ee': u'http://dx.doi.org/10.1007/BF01178506', 'ID': 94L, 'Pub_title': u'Concurrent Bisimulations in Petri Nets.', 'Pub_mdate': u'2011-01-11', 'Pub_journal': u'Acta Inf.'}",
+      "{'Pub_pages': u'133-152', 'Pub_key': u'journals/acta/BestD15a', 'Pub_url': u'db/journals/acta/acta52.html#BestD15a', 'Pub_type': u'article', 'Pub_authors': ['Eike Best', u'Raymond R. Devillers'], 'Pub_year': u'2015', 'Pub_volume': u'52', 'Pub_number': u'2-3', 'Pub_ee': u'http://dx.doi.org/10.1007/s00236-015-0219-0', 'ID': 97L, 'Pub_title': u'State space axioms for T-systems.', 'Pub_mdate': u'2015-03-19', 'Pub_journal': u'Acta Inf.'}",
+      "{'Pub_pages': u'813-857', 'Pub_key': u'journals/acta/BestFHKP98', 'Pub_url': u'db/journals/acta/acta35.html#BestFHKP98', 'Pub_type': u'article', 'Pub_authors': ['Eike Best', u'Wojciech Fraczak', u'Richard P. Hopkins', u'Hanna Klaudel', u'Elisabeth Pelz'], 'Pub_year': u'1998', 'Pub_volume': u'35', 'Pub_number': u'10', 'Pub_ee': u'http://link.springer.de/link/service/journals/00236/bibs/8035010/80350813.htm', 'ID': 106L, 'Pub_title': u'M-Nets: An Algebra of High-Level Petri Nets, with an Application to the Semantics of Concurrent Programming Languages.', 'Pub_mdate': u'2003-11-25', 'Pub_journal': u'Acta Inf.'}",
+      "{'Pub_pages': u'237-254', 'Pub_key': u'journals/acta/BestD09', 'Pub_url': u'db/journals/acta/acta46.html#BestD09', 'Pub_type': u'article', 'Pub_authors': ['Eike Best', u'Philippe Darondeau'], 'Pub_year': u'2009', 'Pub_volume': u'46', 'Pub_number': u'3', 'Pub_ee': u'http://dx.doi.org/10.1007/s00236-009-0095-6', 'ID': 813L, 'Pub_title': u'A decomposition theorem for finite persistent transition systems.', 'Pub_mdate': u'2009-06-22', 'Pub_journal': u'Acta Inf.'}",
+      "{'Pub_pages': u'89-100', 'Pub_key': u'journals/acta/BestV84', 'Pub_url': u'db/journals/acta/acta21.html#BestV84', 'Pub_type': u'article', 'Pub_authors': ['Eike Best', u'Klaus Voss'], 'Pub_year': u'1984', 'Pub_volume': u'21', 'Pub_ee': u'http://dx.doi.org/10.1007/BF00289141', 'ID': 827L, 'Pub_title': u'Free Choice Systems Have Home States.', 'Pub_mdate': u'2011-01-11', 'Pub_journal': u'Acta Inf.'}",
+      "{'Pub_pages': u'35-60', 'Pub_key': u'journals/acta/BestD15', 'Pub_url': u'db/journals/acta/acta52.html#BestD15', 'Pub_type': u'article', 'Pub_authors': ['Eike Best', u'Raymond R. Devillers'], 'Pub_year': u'2015', 'Pub_volume': u'52', 'Pub_number': u'1', 'Pub_ee': u'http://dx.doi.org/10.1007/s00236-014-0209-7', 'ID': 901L, 'Pub_title': u'Synthesis and reengineering of persistent systems.', 'Pub_mdate': u'2015-02-04', 'Pub_journal': u'Acta Inf.'}",
+ }
+
+=======query_keywords on ['Convex', 'Complementation'] , result is========
+
+(stringArray){
+   string[] = 
+      "{'Pub_pages': u'297-305', 'Pub_key': u'journals/acta/Biskup78', 'Pub_url': u'db/journals/acta/acta10.html#Biskup78', 'Pub_type': u'article', 'Pub_year': u'1978', 'Pub_volume': u'10', 'Pub_author': [{'Name': u'Joachim Biskup'}], 'Pub_ee': u'http://dx.doi.org/10.1007/BF00264322', 'ID': 9L, 'Pub_title': u'On the Complementation Rule for Multivalued Dependencies in Database Relations.', 'Pub_mdate': u'2011-01-11', 'Pub_journal': u'Acta Inf.'}",
+      "{'Pub_pages': u'337-346', 'Pub_key': u'journals/acta/LiangC97', 'Pub_url': u'db/journals/acta/acta34.html#LiangC97', 'Pub_type': u'article', 'Pub_year': u'1997', 'Pub_volume': u'34', 'Pub_number': u'5', 'Pub_author': [{'Name': u'Y. Daniel Liang'}, {'Name': u'Maw-Shang Chang'}], 'Pub_ee': u'http://dx.doi.org/10.1007/s002360050088', 'ID': 68L, 'Pub_title': u'Minimum Feedback Vertex Sets in Cocomparability Graphs and Convex Bipartite Graphs.', 'Pub_mdate': u'2011-01-11', 'Pub_journal': u'Acta Inf.'}",
+      "{'Pub_pages': u'501-519', 'Pub_key': u'journals/acta/HertelMMN84', 'Pub_url': u'db/journals/acta/acta21.html#HertelMMN84', 'Pub_type': u'article', 'Pub_year': u'1984', 'Pub_volume': u'21', 'Pub_author': [{'Name': u'Stefan Hertel'}, {'Name': u'Martti M\xe4ntyl\xe4'}, {'Name': u'Kurt Mehlhorn'}, {'Name': u'J\xfcrg Nievergelt'}], 'Pub_ee': u'http://dx.doi.org/10.1007/BF00271644', 'ID': 490L, 'Pub_title': u'Space Sweep Solves Intersection of Convex Polyhedra.', 'Pub_mdate': u'2011-01-11', 'Pub_journal': u'Acta Inf.'}",
+ }
+
+=======query_coop_by_names on Andreas Maletti AND Eric Lilin , result is========
+
+(stringArray){
+   string[] = 
+      "{'Pub_pages': u'561-590', 'Pub_key': u'journals/acta/EngelfrietLM09', 'Pub_url': u'db/journals/acta/acta46.html#EngelfrietLM09', 'Pub_type': u'article', 'Pub_year': u'2009', 'Pub_volume': u'46', 'Pub_number': u'8', 'Pub_author': [{'Name': u'Joost Engelfriet'}, {'Name': u'Eric Lilin'}, {'Name': u'Andreas Maletti'}], 'Pub_ee': u'http://dx.doi.org/10.1007/s00236-009-0105-8', 'ID': 98L, 'Pub_title': u'Extended multi bottom-up tree transducers.', 'Pub_mdate': u'2010-01-04', 'Pub_journal': u'Acta Inf.'}",
+ }

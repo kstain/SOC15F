@@ -1,0 +1,37 @@
+README
+
+SOC Week5 lab
+BPEL design and development.
+
+--------------------------------
+This archive includes two folders:
+
+BPEL_HelloWorld
+HelloWorld project using Eclipse BPEL Designer and ODE
+
+PurchaseOrder_BPEL
+BPEL and wsdl design of Online mall according to the textbook chapter3.
+
+-------------------------------
+How to import:
+
+These two folders are individual eclipse project, just import them separately.
+
+--------------------------------
+How to run:
+
+The helloworld project:
+Add the project to Apache ODE server and test it in Web Service Explorer
+
+The Online Mall project:
+The project is currently not runnable.
+
+---------------------------------
+Description of the online mall project:
+
+There is a wsdl file in the project which includes three services: paymentService, PurchaseOrderService and ShippingService, 
+corresponding to three port types: paymentPT, purchaseOrderPT and shippingPT. They provide the service for customers' payment
+submission, purchase order submission and shipping schedule request. The business process uses three partner links to connect 
+these services: purchasing, payment and shipping. 
+The business process is in a sequence, first a purchase order from the customer is received, then the paymentService is invoked
+to submit the payment and then invoke the shipping service. Finally, a completed result is replied to the customer.

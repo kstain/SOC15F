@@ -1,0 +1,50 @@
+README:
+
+This is SOC week1 lab in PYTHON.
+This project is written with spyne package and clients call
+using suds.
+
+-------------------------
+DEPENDENCIES:
+spyne
+suds
+nose (for testing)
+
+-------------------------
+TO RUN THE SERVER:
+
+python calculator.py [-a IP] -p PORT
+
+example:
+python calculator.py -p 9009
+and the port in use will be *:9009
+
+-------------------------
+TO CALL THE SERVICE:
+
+python client.py [-a IP] [-p PORT] op1 OPR op2
+positional arguments:
+  op1         first operand
+  OPR           operations including ADD SUB MUL DIV
+  op2         second operand
+
+optional arguments:
+  -h, --help  show this help message and exit
+  -a IP       ip listened.
+  -p PORT     port listened
+
+NOTE!! use x to multiply
+
+example:
+python client.py -p 9009 4 MUL 5
+
+OR just use python prompt
+
+from suds.client import Client
+calculator_client = Client('http://localhost:9009/?wsdl')
+print(calculator_client.service.add(4,5))
+
+-------------------------
+TO RUN TESTCASES
+
+nose testCalculator.py [-v]

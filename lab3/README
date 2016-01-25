@@ -1,0 +1,82 @@
+README for SOC week3 LAB
+Code Generator for class
+
+----------------
+Extra 15 points:
+It has already finished in week2 lab. Please refer to the assignment submitted in week2, or you can check the lab2 folder attached.
+
+----------------
+FILES
+
+classgen.xslt
+The xslt file for class code generator
+
+myclass.xml
+The xml example for storing the properties in the xml
+
+transform.py
+Contains transform function which consumes xml and output the code with xslt
+
+service.py
+The web service for code generator.
+
+client.py
+The web service client.
+
+testxml.xml, testxml2.xml
+These are test XML files.
+testxml is a class derived  from a BASE class
+testxml2 is a class with methods with decorators
+
+----------------
+XML attributes and elements reference:
+
+Element Class:
+attributes:
+  name: the name of the class
+  base: the name of the base class
+Child elements:'
+  VAR, FUNC
+
+Element VAR:
+attributes:
+  name: the name of the variable
+  static: the variable is static, value: "true"|"false"
+  private: the variable is private, value: "true"|"false"
+value:
+  the default value of the varibale
+
+Element FUNC:
+attributes:
+  name: the name of function
+  class_method: the function is a class_method, value: "true"|"false"
+  decorator: the decorator of the function
+Child elements:
+  ARG
+  
+Element ARG:
+attributes:
+  name: the name of the attribute
+value:
+  the default valur of the attribute. If ARG has a value, it will be put after
+  all the ARGs which have no default value.
+  
+-----------------------
+
+HOW TO USE:
+
+transform.py:
+
+python transform.py XML XSLT
+
+
+Web Service:
+
+Server:
+python service.py [-i IP] -p PORT -x XSLT
+
+Client:
+python client.py [-i IP] -p PORT -f XML
+
+The output by default will be stdout.
+

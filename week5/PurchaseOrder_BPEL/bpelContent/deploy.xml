@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy xmlns="http://www.apache.org/ode/schemas/dd/2007/03" xmlns:mallorder.localhost="http://mallorder.localhost" xmlns:po="http://servicescomputing.org/xsd/po">
+  <process name="mallorder.localhost:orderService">
+    <active>true</active>
+    <retired>false</retired>
+    <process-events generate="all"/>
+    <provide partnerLink="purchasing">
+      <service name="po:PurchaseOrderService" port="PurchaseOrderPort"/>
+    </provide>
+    <provide partnerLink="payment">
+      <service name="po:PaymentService" port="PaymentPort"/>
+    </provide>
+    <provide partnerLink="shipping">
+      <service name="po:ShippingService" port="ShippingPort"/>
+    </provide>
+    <invoke partnerLink="payment"/>
+    <invoke partnerLink="shipping"/>
+  </process>
+</deploy>

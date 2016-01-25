@@ -1,0 +1,77 @@
+README:
+
+This is SOC lab2 DBLP Parsing and Query
+Lab2 in python.
+
+It also includes the web service for the project.
+
+-------------------------
+DEPENDENCIES:
+
+database:
+MySQL
+
+python modules:
+MySQL-python
+lxml
+PyYAML 
+spyne
+suds
+
+-------------------------
+FILES:
+
+xml_truncate.py
+  XML truncator for dblp
+
+dblp_parser.py
+  The xml parser for DBLP dataset
+  
+dblp_dbdriver.py
+  MySQL database class for DBLP
+  
+example.py
+  Offline example for how to run parsing, storing and querying
+  
+service.py
+  The server part of the webservice
+  
+client.py
+  The suds client for the webservice
+
+dblp_service.wsdl
+  The generated wsdl file for the webservice
+
+config.yaml
+  The configure file template for the server, in YAML
+  
+requests.yaml
+  The requests file template for the client, in YAML
+  
+offline_result.txt
+  The output of example.py
+
+webservice_result.txt
+  The output of client.py using webservice hosted with service.py
+  
+-------------------------
+HOW TO RUN
+
+Basic workflow see example.py
+
+BEFORE RUNNING: 
+  please FIRST edit config.yaml with db info on your host!
+
+TO RUN OFFLINE EXAMPLES
+python example.py
+
+
+TO RUN WEBSERVICE:
+
+1. Start the server
+python service.py [-a IP] -p PORT -c config.yaml
+
+2. Run the client with examples
+edit requests.yaml to specify the requests
+python client.py [-a IP] -p PORT -f requests.yaml
+

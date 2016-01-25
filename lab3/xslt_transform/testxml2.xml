@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CLASS name="Myclass">
+<VAR name="static_var1" static="true">123</VAR>
+<VAR name="static_var2" static="true" private="true"/>
+<VAR name="var1"/>
+<VAR name="var2" private="true">123</VAR>
+<FUNC name="foo" class_method="true">
+<ARG name="arg1">"Default String"</ARG>
+<ARG name="arg2"/>
+</FUNC>
+<FUNC name="bar" decorator="deprecated">
+</FUNC>
+</CLASS>

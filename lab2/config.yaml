@@ -1,0 +1,6 @@
+---
+host     : localhost
+username : kstain
+password : 0416wangwy
+database : test
+xmlpath  : data/dblp_t.xml

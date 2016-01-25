@@ -1,0 +1,29 @@
+---
+source: s1
+sink:   s7
+dependencies:
+  - name: s2
+    dependency:
+      - s1
+  - name: s3
+    dependency:
+      - s1
+  - name: s4
+    dependency:
+      - s2
+      - s3
+  - name: s5
+    dependency:
+      - s3
+  - name: s6
+    dependency:
+      - s4
+  - name: s7
+    dependency:
+      - s5
+      - s6
+weight:
+  cost: 0.5
+  reliability: 0.15
+  performance: 0.15
+  availability: 0.2

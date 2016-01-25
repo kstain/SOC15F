@@ -1,0 +1,16 @@
+---
+services:
+  - name: s1
+    count: 5
+  - name: s2
+    count: 3
+  - name: s3
+    count: 6
+  - name: s4
+    count: 4
+  - name: s5
+    count: 7
+  - name: s6
+    count: 2
+  - name: s7
+    count: 1

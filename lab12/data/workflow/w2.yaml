@@ -1,0 +1,15 @@
+---
+source: s1
+sink: s3
+dependencies:
+  - name: s2
+    dependency:
+      - s1
+  - name: s3
+    dependency:
+      - s2
+weight:
+  cost: 0.35
+  reliability: 0.15
+  performance: 0.3
+  availability: 0.2
